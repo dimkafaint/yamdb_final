@@ -1,5 +1,5 @@
-from datetime import datetime as dt
 from collections import namedtuple
+from datetime import datetime as dt
 
 from django.contrib.auth.models import AbstractUser
 from django.core.validators import MaxValueValidator, MinValueValidator

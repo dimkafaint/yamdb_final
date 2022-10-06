@@ -1,15 +1,6 @@
 from rest_framework import serializers
-
-from reviews.models import (
-    Category,
-    Comment,
-    Genre,
-    Review,
-    Title,
-    User,
-    ROLE_CHOICES
-)
-
+from reviews.models import (ROLE_CHOICES, Category, Comment, Genre, Review,
+                            Title, User)
 
 REVIEW_ERROR_MESSAGE = "Уже есть ревью на это произведение."
 SIGNUP_ERROR_MESSAGE = 'Ошибка, имя me зарезервировано системой.'

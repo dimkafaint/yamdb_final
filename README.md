@@ -61,7 +61,7 @@ sudo docker-compose exec web python manage.py loaddata fixtures/fixtures.json
 ###### Авторы:
 - [Храповицкий Дмитрий](https://github.com/dimkafaint)
 
-![workflow](https://img.shields.io/appveyor/build/dimkafaint/yamdb_final)
+![workflow](https://github.com/dimkafaint/yamdb_final/actions/workflows/main.yml/badge.svg)
 
 
 

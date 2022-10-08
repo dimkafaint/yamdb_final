@@ -10,7 +10,7 @@ nginx 1.21.3
 ### Запуск проекта
 - Клонировать проект с GitHub
 ```
-https://github.com/dimkafaint/infra_sp2
+https://github.com/dimkafaint/yamdb_final
 ```
 - Установить Docker
 ```
@@ -30,7 +30,6 @@ SECRET_KEY=
 ```
 - Собрать контейнер и запустить
 ```
-sudo docker-compose build
 sudo docker-compose up -d
 ```
 - *для остановки использовать 

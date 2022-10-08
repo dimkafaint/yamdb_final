@@ -55,7 +55,7 @@ sudo docker-compose exec web python manage.py shell
 sudo docker-compose exec web python manage.py loaddata fixtures/fixtures.json
 ```
 
-[Проект таже доступен в сети](http://51.250.29.222/)
+[Проект таже доступен в сети](http://51.250.107.137/)
 
 ###### Авторы:
 - [Храповицкий Дмитрий](https://github.com/dimkafaint)

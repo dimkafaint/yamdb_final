@@ -1,8 +1,7 @@
 from django.contrib.auth.tokens import default_token_generator
 from django.core.mail import send_mail
-from django.shortcuts import get_object_or_404
 from django.db.models import Avg
-
+from django.shortcuts import get_object_or_404
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import (generics, mixins, permissions, status, views,
                             viewsets)
@@ -10,23 +9,17 @@ from rest_framework.filters import SearchFilter
 from rest_framework.response import Response
 from rest_framework.versioning import URLPathVersioning
 from rest_framework_simplejwt.tokens import AccessToken
-
-
 from reviews.models import Category, Genre, Review, Title, User
 
-from .filter import TitlesFilter
-from .permissions import (
-    IsAdmin,
-    IsAdminOrReadOnly,
-    ReadOnlyOrIsAdminOrModeratorOrAuthor,
-)
-from .serializers import (
-    CategorySerializer, CommentSerializer,
-    GenreSerializer, ReviewSerializer, SignupSerializer,
-    TitleCreate, TitleSerializer, TokenSerializer,
-    RestrictedUserRoleSerializer, UserSerializer
-)
 from api_yamdb.settings import FROM_EMAIL
+
+from .filter import TitlesFilter
+from .permissions import (IsAdmin, IsAdminOrReadOnly,
+                          ReadOnlyOrIsAdminOrModeratorOrAuthor)
+from .serializers import (CategorySerializer, CommentSerializer,
+                          GenreSerializer, RestrictedUserRoleSerializer,
+                          ReviewSerializer, SignupSerializer, TitleCreate,
+                          TitleSerializer, TokenSerializer, UserSerializer)
 
 
 class FirstVersioning(URLPathVersioning):
